@@ -29,7 +29,7 @@
         -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="@string/google_maps_key" />
+            android:value="AIzaSyD3e_Fju-Zpocen-WIW7-PWY8YNKczIgwA" />
 
         <activity
             android:name=".ui.mainscreen.MapsActivity"
@@ -89,13 +89,8 @@
         <activity
             android:name=".ui.startup.StartUpActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/StartUpTheme"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
             android:windowSoftInputMode="adjustResize">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".ui.userinfo.UserDetailActivity"
@@ -168,9 +163,18 @@
             android:name=".ui.userinfo.OrdersActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".ui.userinfo.TransactionsActivity"
+        <activity
+            android:name=".ui.userinfo.TransactionsActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.startup.SplashActivity"
+            android:theme="@style/StartUpTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
